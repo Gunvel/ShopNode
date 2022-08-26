@@ -396,6 +396,23 @@ body {
     margin-bottom: 97px;
   }
 }
+.b-featured__notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 40px;
+  gap: 20px;
+  background: lightgray;
+}
+.b-featured__notFound > div {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+}
 
 .b-featuredItem {
   background: #F8F8F8;
