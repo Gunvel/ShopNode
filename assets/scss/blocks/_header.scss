@@ -1,0 +1,21 @@
+.b-header {
+    background: #222222;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+        @media (max-width: 1204px) {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+}

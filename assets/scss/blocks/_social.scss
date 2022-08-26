@@ -1,0 +1,24 @@
+.b-social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 7px;
+    justify-self: flex-start;
+
+    @media (max-width: 550px) {
+        margin-bottom: 40px;
+    }
+
+    &__imgButtom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        background: #FFFFFF;
+        fill: black;
+
+        &:hover {
+            background: $minorColor;
+            fill: white;
+        }
+    }
+}

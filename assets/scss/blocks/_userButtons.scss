@@ -1,0 +1,30 @@
+.b-userButtons {
+    display: grid;
+    grid-column-gap: 33px;
+    grid-auto-flow: column;
+    align-items: end;
+    fill: #E8E8E8;
+
+    @media (max-width: 767px) {
+        grid-column-gap: 0;
+    }
+
+    &__button {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        &:hover {
+            fill: $minorColor;
+        }
+
+        &_visibly {
+            @media (max-width: 767px) {
+                display: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "Макет сайта https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=0%3A1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/styles",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunvel/Shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunvel/Shop/issues"
+  },
+  "homepage": "https://github.com/Gunvel/Shop#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}

@@ -1,0 +1,26 @@
+.b-footer {
+    background: #222224;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+
+    &__container {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 550px) {
+            flex-direction: column-reverse;
+            padding-top: 43px;
+            padding-bottom: 9px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+}

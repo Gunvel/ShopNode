@@ -1,0 +1,64 @@
+.b-brand {
+    position: relative;
+    background: #F1E4E6;
+    margin-bottom: 65px;
+
+    @media (max-width: 1204px) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+
+    &__container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1600px;
+
+        @media (max-width: 767px) {
+            justify-content: center;
+        }
+
+        >img {
+            width: 50%;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    &__naviMenu {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        box-shadow: black 10px -8px 20px 0px;
+        background: white;
+        width: 232px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    &__naviExitButton {
+        margin-top: 16px;
+        margin-right: 16px;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        font-family: inherit;
+        align-self: flex-end;
+        display: flex;
+        border: none;
+        outline: none;
+        background: transparent;
+        fill: #6F6E6E;
+
+        &:hover {
+            fill: $minorColor;
+        }
+    }
+}

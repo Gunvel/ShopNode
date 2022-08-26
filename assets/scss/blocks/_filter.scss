@@ -1,0 +1,126 @@
+.b-filter {
+    padding: 51px 16px 64px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-sizing: border-box;
+
+    @media (max-width: 1023px) {
+        padding: 24px 16px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    @media (max-width: 667px) {
+        padding: 24px 8px 32px;
+    }
+
+    // @media (max-width: 667px) {
+    //     padding: 24px 8px 32px;
+
+    //     .filter_text {
+    //         display: none;
+    //     }
+
+    //     .filter_text_icon_container>img {
+    //         width: 25px;
+    //         object-fit: cover;
+    //     }
+
+    //     .filter_button {
+    //         font-size: 12px;
+    //         line-height: 15px;
+    //     }
+
+    //     .filter_button::after {
+    //         padding-left: 9px;
+    //         padding-bottom: 7px;
+    //     }
+    // }
+
+    &__mainButton {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        background: transparent;
+        fill: black;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        text-transform: uppercase;
+
+        @media (max-width: 1023px) {
+            justify-self: flex-start;
+        }
+
+        &>span {
+            @media (max-width: 667px) {
+                display: none;
+            }
+        }
+
+        &>svg {
+            width: 15px;
+
+            @media (max-width: 667px) {
+                width: 25px;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    // &__text {
+    //     font-weight: 600;
+    //     font-size: 14px;
+    //     line-height: 17px;
+    //     color: #000000;
+    //     margin-right: 11px;
+    //     text-transform: uppercase;
+    // }
+
+    &__buttonsContainer {
+        display: flex;
+
+        @media (max-width: 1023px) {
+            justify-self: flex-end;
+        }
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        background-color: transparent;
+        align-self: center;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        font-family: inherit;
+
+        @media (max-width: 667px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &::after {
+            padding-left: 10px;
+            content: url(../img/dropDownIcon.svg);
+
+            @media (max-width: 667px) {
+                padding-left: 9px;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+}

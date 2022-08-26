@@ -1,0 +1,45 @@
+.b-service {
+    background: #222224;
+
+    &__container {
+        padding: 104px 0px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        align-items: baseline;
+        justify-items: center;
+
+        @media (max-width: 1160px) {
+            padding: 48px 16px 64px;
+            grid-template: repeat(3, 1fr) / 1fr;
+            grid-column-gap: 0;
+            grid-row-gap: 49px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 48px 14px 81px;
+            grid-row-gap: 47px;
+        }
+    }
+
+    &__item {
+        width: 360px;
+        text-align: center;
+        color: #FBFBFB;
+        padding: 0px 22px;
+        box-sizing: border-box;
+    }
+
+    &__header {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

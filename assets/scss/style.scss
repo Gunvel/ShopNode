@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import "variable";
+
+body {
+    margin: 0;
+    font-family: $mainfont;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@import "blocks/header";
+@import "blocks/mainAndSearch";
+@import "blocks/userButtons";
+@import "blocks/basket";
+@import "blocks/brand";
+@import "blocks/brandText";
+@import "blocks/offer";
+@import "blocks/featured";
+@import "blocks/featuredItem";
+@import "blocks/service";
+@import "blocks/subscribe";
+@import "blocks/comment";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/naviMenu";
+@import "blocks/pageNavHeader";
+@import "blocks/breadcrumb";
+@import "blocks/filter";

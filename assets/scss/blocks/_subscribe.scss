@@ -1,0 +1,94 @@
+.b-subscribe {
+    background: url(../img/subscribeBackground.jpg) no-repeat;
+    background-size: cover;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__container {
+        padding-top: 97px;
+        padding-bottom: 126px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 64px;
+            padding-bottom: 140px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 54px;
+            padding-bottom: 109px;
+        }
+    }
+
+    &__comment {
+        width: 360px;
+    }
+
+    &__formWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+        justify-self: flex-end;
+        padding: 0 70px;
+
+        @media (max-width: 1023px) {
+            align-self: center;
+            margin-top: 48px;
+            padding: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 59px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        color: #222224;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        color: #222224;
+        margin-bottom: 32px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+
+        >input {
+            height: inherit;
+            background: #e1e1e1;
+            border: none;
+            padding: 14px 22px;
+            box-sizing: border-box;
+            border-top-left-radius: 28px;
+            border-bottom-left-radius: 28px;
+            height: 100%;
+        }
+
+        >button {
+            height: inherit;
+            border: none;
+            color: white;
+            font-family: inherit;
+            background: #f16d7f;
+            border-top-right-radius: 28px;
+            border-bottom-right-radius: 28px;
+            padding: 14px 8px;
+        }
+    }
+}

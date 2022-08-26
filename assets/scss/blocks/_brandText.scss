@@ -1,0 +1,59 @@
+.b-brandText {
+    display: flex;
+    align-self: center;
+    margin-left: 60px;
+
+    @media (max-width: 1204px) {
+        margin-left: 40px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 147px 56px;
+    }
+
+    &__rectangle {
+        background: $minorColor;
+        width: 12px;
+        margin-right: 16px;
+    }
+
+    &__textContainer {
+        color: #222222;
+    }
+
+    &__first {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+
+        @media (max-width: 1204px) {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+
+    &__second {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        @media (max-width: 1204px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        >span {
+            color: $minorColor;
+        }
+    }
+}

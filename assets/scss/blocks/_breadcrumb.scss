@@ -1,0 +1,22 @@
+.b-breadcrumb {
+    display: flex;
+
+    &__item {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        text-transform: uppercase;
+
+        &:not(:last-child)::after {
+            padding-left: 3px;
+            padding-right: 3px;
+            content: '/';
+        }
+
+        &_active {
+            font-weight: 700;
+            color: #F16D7F;
+        }
+    }
+}
