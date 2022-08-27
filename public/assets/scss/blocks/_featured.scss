@@ -12,6 +12,30 @@
         margin-right: 8px;
     }
 
+    &_indexPageOffset {
+        margin-bottom: 96px;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 65px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 97px;
+        }
+    }
+
+    &_catalogPageOffset {
+        margin-bottom: 97px;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 64px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 65px;
+        }
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
@@ -74,7 +98,6 @@
         color: #F26376;
         padding: 15px 39px;
         margin-top: 49px;
-        margin-bottom: 96px;
 
         &:hover {
             background: #F16D7F;
@@ -83,12 +106,19 @@
 
         @media (max-width: 1023px) {
             margin-top: 33px;
-            margin-bottom: 65px;
         }
 
         @media (max-width: 767px) {
             margin-top: 42px;
-            margin-bottom: 97px;
+        }
+    }
+
+    &__pageSelector {
+        align-self: center;
+        margin-top: 48px;
+
+        @media (max-width: 1023px) {
+            margin-top: 40px;
         }
     }
 
