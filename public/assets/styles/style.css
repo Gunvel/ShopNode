@@ -505,6 +505,12 @@ body {
   height: 26px;
   width: 24px;
 }
+.b-featuredItem__button:hover {
+  cursor: pointer;
+  color: #f16d7f;
+  fill: #f16d7f;
+  border-color: #f16d7f;
+}
 .b-featuredItem__content {
   margin: 25px 17px 20px;
 }

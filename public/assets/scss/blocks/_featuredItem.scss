@@ -66,6 +66,13 @@
             height: 26px;
             width: 24px;
         }
+
+        &:hover {
+            cursor: pointer;
+            color: $minorColor;
+            fill: $minorColor;
+            border-color: $minorColor;
+        }
     }
 
     &__content {
