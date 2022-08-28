@@ -1,7 +1,6 @@
 const app = new Vue({
     el: '#app',
     data: {
-        ds: 123
     },
     methods: {
         getJson(url) {
@@ -37,6 +36,22 @@ const app = new Vue({
                     this.$refs.error.text = error;
                 })
         },
+        deleteJson(url, data) {
+            return fetch(url, {
+                method: 'DELETE',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+                .then(result => result.json())
+                .catch(error => {
+                    this.$refs.error.text = error;
+                })
+        },
+        getImgURL(img) {
+            return 'assets/img/' + img;
+        }
     },
     mounted() {
     }

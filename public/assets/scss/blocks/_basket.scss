@@ -2,7 +2,7 @@
     position: relative;
     display: inherit;
 
-    >span {
+    &__counter {
         position: absolute;
         top: -5px;
         left: 23px;
@@ -13,5 +13,41 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
+    }
+
+    &__basketContainer {
+        position: absolute;
+        top: 100%;
+        right: 30%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        background: white;
+        box-shadow: 0 0 25px 0px rgb(0 0 0 / 35%);
+        z-index: 1;
+    }
+
+    &__notFound {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #222222;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    &__total {
+        font-size: 18px;
+        line-height: 29px;
+        color: #222222;
+        margin-top: 22px;
+        margin-bottom: 0;
+
+        >span {
+            color: $minorColor;
+        }
     }
 }

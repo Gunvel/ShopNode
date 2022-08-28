@@ -1,0 +1,60 @@
+.b-basketItem {
+    display: grid;
+    grid-template-columns: auto minmax(250px, auto);
+    background: #f8f8f8;
+
+    >img {
+        height: 250px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    &__textElement {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 29px;
+        color: #222222;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #575757;
+        margin-bottom: 2px;
+
+        &_highLight {
+            color: $minorColor;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        font-family: inherit;
+        background: white;
+        border: 1px solid #FF6A6A;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        margin-top: auto;
+
+        &:hover {
+            background: #F16D7F;
+            color: #FFFFFF;
+        }
+    }
+}
