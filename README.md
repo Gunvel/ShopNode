@@ -1,6 +1,6 @@
 # ShopNode
 
-Страница Catalog макета сайта https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=0%3A1 <br>
+Страница Catalog макета сайта https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=52%3A0 <br>
 Добавлен сервер на node.js (express) <br>
 Клиент работает на vue.js <br>
 
