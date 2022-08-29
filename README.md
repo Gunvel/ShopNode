@@ -1,8 +1,8 @@
 # ShopNode
 
-Страница catalog макета сайта https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=0%3A1 
-Добавлен сервер на node.js (express)
-Клиент работает на vue.js
+Страница catalog макета сайта https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=0%3A1 <br>
+Добавлен сервер на node.js (express) <br>
+Клиент работает на vue.js <br>
 
 Функции:
 Загрузка продуктов с сервера
