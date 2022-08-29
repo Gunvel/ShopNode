@@ -1,4 +1,4 @@
-Vue.component('filter-el', {
+Vue.component('filter-prod', {
     data() {
         return {
             userSearch: ''
