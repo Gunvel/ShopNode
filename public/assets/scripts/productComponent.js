@@ -1,6 +1,7 @@
 Vue.component('products', {
     data() {
         return {
+            filtered: [],
             products: []
         }
     },
@@ -9,6 +10,7 @@ Vue.component('products', {
             .then(data => {
                 for (let item of data) {
                     this.$data.products.push(item);
+                    this.$data.filtered.push(item);
                 }
             });
         //     [
@@ -78,18 +80,22 @@ Vue.component('products', {
         //     ];
     },
     methods: {
-
+        filter(userSearch) {
+            console.log(`search ${userSearch}`);
+            let regexp = new RegExp(userSearch, 'i');
+            this.filtered = this.products.filter(el => regexp.test(el.title));
+        }
     },
     template: `
                 <div class="b-featured b-featured_catalogPageOffset container">
                 
-                    <div class="b-featured__notFound" v-show="!products || products.length == 0">
+                    <div class="b-featured__notFound" v-show="!filtered || filtered.length == 0">
                         <img src="assets/img/notFoundProduct.png"/>
                         <div>Products not found</div>
                     </div>
         
                     <div class="b-featured__itemsContainer">
-                        <product v-for="item of products" :key="item.id" :product="item" @add-product="$parent.$refs.cart.addProduct"></product>
+                        <product v-for="item of filtered" :key="item.id" :product="item" @add-product="$parent.$refs.cart.addProduct"></product>
                     </div>
 
                     <div class="b-pageSelector b-featured__pageSelector">

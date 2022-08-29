@@ -1,11 +1,6 @@
 .b-mainAndSearch {
     display: grid;
     grid-column-gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     align-items: end;
-    fill: #E8E8E8;
-
-    >svg:hover {
-        fill: $minorColor;
-    }
 }

@@ -1,0 +1,30 @@
+.b-search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &__button {
+        border: none;
+        outline: none;
+        font-family: inherit;
+        margin: 0;
+        padding: 0;
+        fill: #E8E8E8;
+        background: transparent;
+
+        >svg:hover {
+            fill: $minorColor;
+        }
+    }
+
+    &__input {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1 solid white;
+        border-left: 0;
+        outline: none;
+        font-family: inherit;
+        background: transparent;
+        color: white;
+    }
+}
