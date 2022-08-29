@@ -12,6 +12,10 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+main {
+  position: relative;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -1157,6 +1161,47 @@ body {
 .b-pageSelector__button:hover {
   fill: #EF5B70;
   cursor: pointer;
+}
+
+.b-error {
+  background: rgb(238, 238, 238);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 25px 0px rgba(255, 30, 30, 0.35);
+  z-index: 100;
+}
+.b-error__button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+}
+.b-error__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+}
+.b-error__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+.b-error__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,10 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+main {
+    position: relative;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1140px;
@@ -43,3 +47,4 @@ body {
 @import "blocks/breadcrumb";
 @import "blocks/filter";
 @import "blocks/pageSelector";
+@import "blocks/error";
